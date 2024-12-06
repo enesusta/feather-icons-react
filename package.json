@@ -1,0 +1,33 @@
+{
+  "name": "feather-icons-react",
+  "version": "0.0.5",
+  "description": "Feather Icons as a React component.",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "start": "vite",
+    "build": "pnpm clean && vite build && terser dist/index.es.js --compress -o dist/index.es.js",
+    "preview": "vite preview",
+    "prepublishOnly": "pnpm build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enesusta/feather-icons-react.git"
+  },
+  "main": "dist/index.es.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "author": "enesusta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enesusta/feather-icons-react/issues"
+  },
+  "homepage": "https://github.com/enesusta/feather-icons-react#readme",
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@vitejs/plugin-react": "^4.3.3",
+    "terser": "^5.36.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vite-plugin-dts": "^4.3.0"
+  }
+}
