@@ -16,14 +16,15 @@ export default defineConfig(({ mode }) => {
         entry: path.resolve(__dirname, "lib/index.js"),
         name: formattedName,
         formats: ["es"],
-        // fileName: (format) => `${formattedName}.${format}.js`,
         fileName: (format) => `index.${format}.js`,
       },
       rollupOptions: {
-        external: ["react"],
+        external: ["react", "react/jsx-runtime", "react-dom"],
         output: {
           globals: {
             react: "React",
+            "react/jsx-runtime": "react/jsx-runtime",
+            "react-dom": "ReactDOM",
           },
         },
       },

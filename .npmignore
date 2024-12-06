@@ -2,6 +2,9 @@
 # .npmignore
 node_modules/
 
+lib/
+
+vite.config.ts
 
 jest.config.js
 jest.init.js
@@ -37,4 +40,3 @@ package.json
 .nvmrc
 .prettierrc.js
 
-icons.json
