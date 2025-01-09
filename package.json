@@ -1,6 +1,6 @@
 {
-  "name": "feather-icons-react",
-  "version": "0.0.9",
+  "name": "@enesusta/feather-icons-react",
+  "version": "1.0.0",
   "description": "Feather Icons as a React component.",
   "scripts": {
     "clean": "rm -rf dist",
